@@ -1,0 +1,58 @@
+
+.cw-form-login {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.cw-form-login input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+
+.cw-form-login input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cw-form-login input:focus {
+    background-color: white;
+    width: 300px;
+    color: #49320f;
+}
+
+.cw-form-login button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    padding: 10px 15px;
+    color: #1f6935;
+    border-radius: 50px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.25s;
+    font-weight: bold;
+}
+
+.cw-form-login button:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px #00a2ff;
+    color: #00a2ff;
+}
