@@ -1,7 +1,8 @@
 import React from 'react';
 import cubImage from '../../images/cub2.png';
 import Formulario from './Formulario';
-import './background.css';
+import ButtonReturn from './ButtonReturn';
+import './Background.css';
 
 class Background extends React.Component {
 
@@ -15,6 +16,9 @@ class Background extends React.Component {
                     backgroundImage: `url(${cubImage})`
                 }}
             >
+                <ButtonReturn
+                    textButton = "Ir al inicio"
+                />
                 <div className="wrapper d-flex justify-content-center align-items-center"
                     style={{
                         background: `linear-gradient(135deg, ${leftColor} 0%, ${rightColor} 100%)`

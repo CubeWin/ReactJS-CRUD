@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import InicioLogin from './components/login/Login';
+/** @Paginas */
+// import LoginPage from './pages/Login.page';
+// import HomePage from './pages/Home.page';
+import App from './routers/app';
+/** @Complementos */
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <InicioLogin
-            leftColor = "rgba(146, 255, 192, 1)"
-            rightColor = "rgba(0, 38, 97, 1)"
-            title = "Bienvenido"
-            buttonMessage = "validar"
-        />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );
