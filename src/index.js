@@ -4,13 +4,15 @@ import * as serviceWorker from './serviceWorker';
 /** @Paginas */
 // import LoginPage from './pages/Login.page';
 // import HomePage from './pages/Home.page';
-import App from './routers/app';
+// import App from './routers/app';
+// import Index from './routers/administrator';
+import Index from './routers/Index';
 /** @Complementos */
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Index />
     </React.StrictMode>,
     document.getElementById('root')
 );
