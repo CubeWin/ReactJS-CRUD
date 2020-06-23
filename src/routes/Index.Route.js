@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AdminRoute from './Admin.Route';
 /** @Páginas */
 import HomePage from '../pages/Home.page';
-import LoginPage from '../pages/Login.page';
 import NotFound from '../pages/NotFound.page';
 
 class Index extends React.Component {
@@ -12,7 +11,6 @@ class Index extends React.Component {
     render() {
         const myRoutes = [
             { exact: true, path: "/", component: HomePage},
-            { exact: true, path: "/login", component: LoginPage},
             { path: "/admin", component: AdminRoute },
             { component: NotFound }
         ];
@@ -25,7 +23,7 @@ class Index extends React.Component {
                             exact={route.exact}
                             strict={route.strict}
                             path={route.path}
-                            key={route.key}
+                            key={i}
                             render={props => (
                                 <route.component {...props} path={route.path} />
                             )}

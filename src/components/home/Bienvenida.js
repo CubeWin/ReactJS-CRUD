@@ -19,7 +19,7 @@ class Bienvenida extends React.Component {
                     <div className="card-body text-center">
                         <h1 className="text-primary">{title}</h1>
                         <p className="text-secondary">{description}</p>
-                        <Link to="/login" className="card-link text-uppercase font-weight-bold">
+                        <Link to="/admin/login" className="card-link text-uppercase font-weight-bold">
                             {buttonMessage} <FontAwesomeIcon icon={faSignInAlt} />
                         </Link>
                     </div>

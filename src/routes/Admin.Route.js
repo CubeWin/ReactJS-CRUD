@@ -4,12 +4,12 @@ import NotFound from '../pages/NotFound.page';
 
 import LoginPage from '../pages/Login.page';
 
-class Admin extends React.Component {
+class AdminRoute extends React.Component {
     render() {
         const { path } = this.props;
 
         const routes = [
-            { exact: true, path: [path + "/", path + "/login"], LoginPage },
+            { exact: true, path: [path + "/", path + "/login"], component: LoginPage },
             { exact: true, path: path + "/persona", component: () => <h1>Personas</h1> },
             { exact: true, path: path + "/usuario", component: () => <h1>Usuarios</h1> },
             { component: NotFound }
@@ -45,4 +45,4 @@ class Admin extends React.Component {
     }
 }
 
-export default Admin;
+export default AdminRoute;
