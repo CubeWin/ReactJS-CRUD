@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 // import HomePage from './pages/Home.page';
 // import App from './routers/app';
 // import Index from './routers/administrator';
-import Index from './routers/Index';
+import Index from './routes/Index.Route';
 /** @Complementos */
 import 'bootstrap/dist/css/bootstrap.css';
 

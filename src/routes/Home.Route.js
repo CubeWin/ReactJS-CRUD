@@ -14,23 +14,23 @@ class Home extends React.Component {
                 path: path + "/web", component: this.SubRoutes, routes: [
                     { exact: true, strict: true, path: path + "/web/bus", component: () => <h1>WEB pagina BUS</h1> },
                     { exact: true, strict: true, path: path + "/web/car", component: () => <h1>WEB pagina CARD</h1> },
-                    {component: NotFound }
+                    { component: NotFound }
                 ]
             },
             {
                 path: path + "/literal", component: this.SubRoutes, routes: [
                     { exact: true, path: path + "/literal/bus", component: () => <h1>Literal pagina BUS</h1> },
                     { exact: true, path: path + "/literal/car", component: () => <h1>Literal pagina CARD</h1> },
-                    {component: NotFound }
+                    { component: NotFound }
                 ]
             },
-            {component: NotFound }
+            { component: NotFound }
         ];
 
         return (
             <Switch>
                 {routes.map((route, i) => (
-                    // <RouteWithSubRoutes key={i} {...routes} />
+                    // <SubRoute key={i} {...route} />
                     this.RouteWithSubRoutes({ ...route, key: i })
                 ))}
             </Switch>
@@ -38,7 +38,7 @@ class Home extends React.Component {
     }
 
     RouteWithSubRoutes = (routes) => {
-        console.log(routes);
+        // console.log(routes);
         return (
             <Route
                 exact={routes.exact}
@@ -56,7 +56,7 @@ class Home extends React.Component {
         // console.log(routes);
         return (
             <div>
-                <h1>Sub web</h1>
+                <h1>Sub we2</h1>
                 <Switch>
                     {routes.map((route, i) => (
                         this.RouteWithSubRoutes({ ...route, key: i })
@@ -65,6 +65,7 @@ class Home extends React.Component {
             </div>
         );
     }
+
 }
 
 export default Home;
